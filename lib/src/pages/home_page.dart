@@ -1,4 +1,6 @@
 import 'package:appoimentapp/src/utils/colors.dart';
+import 'package:appoimentapp/src/widgets/client_container.dart';
+import 'package:appoimentapp/src/widgets/client_listview.dart';
 import 'package:appoimentapp/src/widgets/custom_appbar.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
@@ -60,6 +62,24 @@ class HomePage extends StatelessWidget {
                 fontWeight: FontWeight.bold,
               ),
             ),
+          ),
+          Padding(
+            padding: const EdgeInsets.all(20.0),
+            child: ClientContainer(),
+          ),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 30),
+            child: Text(
+              'Next appointments',
+              style: TextStyle(
+                color: Colors.grey,
+                fontSize: height * 0.02,
+              ),
+            ),
+          ),
+          Flexible(
+            fit: FlexFit.loose,
+            child: ClientsListView(),
           ),
         ],
       ),
