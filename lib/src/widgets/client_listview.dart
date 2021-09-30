@@ -10,7 +10,8 @@ class ClientsListView extends StatelessWidget {
     final width = MediaQuery.of(context).size.width;
 
     return ListView.builder(
-      physics: NeverScrollableScrollPhysics(),
+      // padding: EdgeInsets.zero,
+      physics: BouncingScrollPhysics(),
       shrinkWrap: true,
       itemCount: clients.length,
       itemBuilder: (_, i) {
@@ -26,7 +27,7 @@ class ClientsListView extends StatelessWidget {
                 BoxShadow(
                   color: Colors.grey,
                   blurRadius: 20,
-                  offset: Offset(0.0, 0.8),
+                  offset: Offset(0.0, 15),
                 ),
               ],
             ),

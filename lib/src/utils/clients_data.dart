@@ -19,4 +19,16 @@ List<Clients> clients = [
     '09 jan 2020, 8am - 10am',
     'assets/person.jpeg',
   ),
+  Clients(
+    'Ora',
+    'Murray',
+    '09 jan 2020, 8am - 10am',
+    'assets/person.jpeg',
+  ),
+  Clients(
+    'Ora',
+    'Murray',
+    '09 jan 2020, 8am - 10am',
+    'assets/person.jpeg',
+  ),
 ];

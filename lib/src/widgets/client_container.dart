@@ -1,5 +1,7 @@
+import 'package:appoimentapp/src/pages/client_info_page.dart';
 import 'package:appoimentapp/src/utils/colors.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class ClientContainer extends StatelessWidget {
   const ClientContainer({Key? key}) : super(key: key);
@@ -107,12 +109,15 @@ class ClientContainer extends StatelessWidget {
               Spacer(),
               Padding(
                 padding: const EdgeInsets.all(10.0),
-                child: Icon(
-                  Icons.info_outlined,
-                  size: height * 0.04,
-                  color: CustomColors.blue,
+                child: IconButton(
+                  icon: Icon(
+                    Icons.info_outlined,
+                    size: height * 0.04,
+                    color: CustomColors.blue,
+                  ),
+                  onPressed: () => Get.to(() => ClientsInfoPage()),
                 ),
-              )
+              ),
             ],
           ),
           Padding(

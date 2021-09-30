@@ -21,6 +21,7 @@ class HomePage extends StatelessWidget {
         ),
       ),
       body: Column(
+        mainAxisSize: MainAxisSize.min,
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           Padding(
@@ -28,6 +29,7 @@ class HomePage extends StatelessWidget {
               horizontal: 25,
             ),
             child: CustomAppBar(
+              condition: false,
               leadingIcon: Icon(
                 Icons.short_text,
               ),
@@ -68,7 +70,7 @@ class HomePage extends StatelessWidget {
             child: ClientContainer(),
           ),
           Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 30),
+            padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 10),
             child: Text(
               'Next appointments',
               style: TextStyle(
